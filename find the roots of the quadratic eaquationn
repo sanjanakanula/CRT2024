@@ -1,0 +1,23 @@
+find the roots of the quadratic eaquation
+
+#include <stdio.h>
+#include<math.h>
+int main() {
+    float a,b,c;
+    scanf("%f%f%f",&a,&b,&c);
+    float d=b*b-4*a*c;
+    if(d<0)
+    {
+        printf("Root are not possible");
+    }
+    else
+    {
+      float R1=(-b+sqrt(b*b-4*a*c))/(2*a);
+      float R2=(-b-sqrt(b*b-4*a*c))/(2*a);
+      printf("Root1=%f\n",R1);
+      printf("Root2=%f",R2);
+    }
+   
+
+    return 0;
+}
